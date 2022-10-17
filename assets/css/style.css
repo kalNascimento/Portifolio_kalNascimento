@@ -1,16 +1,18 @@
 @import url('./home.css');
+@import url('./header.css');
+@import url('./footer.css');
 
 :root {
-    --background-synthwave: #140626;
-    --purple-synthwave: linear-gradient(180deg, #140626 0%, #240940 16.15%, #B83DA3 97.92%);
-    --pink-synthwave: linear-gradient(91.36deg, #F2059F 0%, #F29E05 100%);
-    --pink-synthwave-2: linear-gradient(91.36deg, #F2059F 0%, #F29E05 50%);
+    --background--synthwave: #140626;
+    --purple--synthwave: linear-gradient(180deg, #140626 0%, #240940 15%, #B83DA3 100%);
+    --pink--synthwave: linear-gradient(91.36deg, #F2059F 0%, #F29E05 100%);
+    --pink--synthwave-2: linear-gradient(91.36deg, #F2059F 0%, #F29E05 50%);
     --pink-shadow: rgba(184, 61, 163, 0.75);
 
-    --background-acid: #0E1B00;
-    --green-acid: linear-gradient(180deg, #032900 0%, #0E1B00 0.01%, #032900 19.1%, #89FF00 100%);
-    --yellow-acid: linear-gradient(90deg, #89FF00 0%, #FDFF00 100%);
-    --yellow-acid-2: linear-gradient(90deg, #89FF00 0%, #FDFF00 50%);
+    --background--acid: #0E1B00;
+    --green--acid: linear-gradient(180deg, #0E1B00 0%, #032900 15%, #032900 19.1%, #89FF00 100%);
+    --yellow--acid: linear-gradient(90deg, #89FF00 0%, #FDFF00 100%);
+    --yellow--acid-2: linear-gradient(90deg, #89FF00 0%, #FDFF00 50%);
     --green-shadow: rgb(137, 255, 0);
 
     --white-100: #FFFFFF;
@@ -23,58 +25,76 @@
     box-sizing: border-box;
 }
 
-.background__container-synthwave {
-    background-color: var(--background-synthwave);
+body {
+    font-family: var(--font-unica);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    width: 100%;
 }
 
-.color__button-synthwave {
+.background__container--synthwave {
+    background-color: var(--background--synthwave);
+}
+
+.menu__lista--synthwave {
+    background: var(--purple--synthwave);
+}
+
+.color__button--synthwave {
     background: linear-gradient(90deg, #F2059F 0%, #F29E05 100%);
-    color: var(--background-synthwave);
+    color: var(--background--synthwave);
 }
 
-.color__titulo-synthwave {
-    background: var(--pink-synthwave);
+.color__titulo--synthwave {
+    background: var(--pink--synthwave);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.color__titulo-synthwave-2 {
-    background: var(--pink-synthwave-2);
+.color__titulo--synthwave-2 {
+    background: var(--pink--synthwave-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.box-shadow-synthwave {
-    box-shadow: 0 0 0.625rem var(--pink-shadow);
+.border__header--synthwave {
+    border-bottom: 1px solid var(--pink-shadow);
 }
 
-
-.background__container-acid {
-    background-color: var(--background-acid);
+.border__footer--synthwave {
+    border-top: 1px solid var(--pink-shadow);
 }
 
-.color__button-acid {
-    background: var(--yellow-acid);
-    color: var(--background-acid);
+.background__container--acid {
+    background-color: var(--background--acid);
 }
 
-.color__titulo-acid {
-    background: var(--yellow-acid);
+.menu__lista--acid {
+    background: var(--green--acid);
+}
+
+.color__button--acid {
+    background: var(--yellow--acid);
+    color: var(--background--acid);
+}
+
+.color__titulo--acid {
+    background: var(--yellow--acid);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.color__titulo-acid-2 {
-    background: var(--yellow-acid-2);
+.color__titulo--acid-2 {
+    background: var(--yellow--acid-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-
-.box-shadow-acid {
+.box-shadow--acid {
     box-shadow: 0 0 0.625rem var(--green-shadow);
 }
